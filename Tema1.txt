@@ -1,0 +1,86 @@
+//Tema 1
+
+Ex.1:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Calculator</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+const operatiune = prompt('Introduceti operatiunea ( +, -, * , / ): ');
+
+if(operatiune != '+' && operatiune != '-' && operatiune !='*' && operatiune != '/')
+{
+    document.write("Nu exista: ", operatiune);
+}else{
+
+const nr1 = parseFloat(prompt('Primul numar: '));
+const nr2 = parseFloat(prompt('Al doilea numar: '));
+
+var rezultat;
+
+if (operatiune == '+') {
+    rezultat = nr1 + nr2;
+}
+else if (operatiune == '-') {
+    rezultat = nr1 - nr2;
+}
+else if (operatiune == '*') {
+    rezultat = nr1 * nr2;
+}
+else {
+    rezultat = nr1 / nr2;
+}
+
+
+document.write(`${nr1} ${operatiune} ${nr2} = ${rezultat}`);
+}
+</script>
+
+
+
+Ex.2:
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Numere pare</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+    for (var i=0; i<=100; i++) {
+     if (i % 2 === 0) {
+                document.write(i," ");
+                   
+        }
+}
+</script>
+
+
+
+Ex.3:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Data si ora curentã</title>
+</head>
+<body>
+    <p>Data si ora curentã: <span id="datasiora"></span></p>
+</body>
+</html>
+<script>
+var dt = new Date();
+var data;
+
+data = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+document.getElementById("datasiora").innerHTML = data;
+console.log(data);
+</script>

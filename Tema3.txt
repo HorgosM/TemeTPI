@@ -1,0 +1,70 @@
+//Tema3
+
+Ex.1:
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script>
+let text = "Ana are mere";  // Sirul Ana are mere contine 6 vocale
+let x=text.lenght;
+let cnt=0;
+
+for(let i=0;i<x;i++)
+{
+ if(text[i]=='a' || text[i]=='e' || text[i]=='i' || text[i]=='o' || text[i]=='u' )
+ }
+  cnt++;
+ }
+ if(text[i]=='A' || text[i]=='E' || text[i]=='I' || text[i]=='O' || text[i]=='U' )
+ }
+ cnt++;
+ }
+}
+document.getElementById("demo").innerHTML = cnt;
+</script>
+
+</body>
+</html>
+
+Ex.2:
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script>
+let x=300;
+let y=100;
+let z=200;
+if(X*y==z)
+{
+let a="poate inlocui $ cu '*' pt x*y=z";
+document.getElementById("demo").innetHTML =a;
+}
+else if(x+y==z)
+{
+let a="poate inlocui $ cu '+' pt x+y=z";
+document.getElementById("demo").innetHTML =a;
+}
+else if(x/y==z)
+{
+let a="poate inlocui $ cu '/' pt x/y=z";
+document.getElementById("demo").innetHTML =a;
+}
+else if(x-y==z)
+{
+let "poate inlocui $ cu '-' pt x-y=z";
+document.getElementById("demo").innetHTML =a;
+}
+</script>
+
+</body>
+</html>
